@@ -6,11 +6,31 @@
    pip install geoip2
    ```
 
-2. Copy python-maxmind.py
+2. Install geoip-bin geoip-database
+   ```
+   apt-get install geoip-bin geoip-database
+   ```
+
+3. Modify /etc/GeoIP.conf (see here https://dev.maxmind.com/geoip/geoipupdate/)
+
+4. Run geoipupdate
+
+2. Clone python-maxmind.py
 
     ```
     git clone https://github.com/vsegdacocacola/python-maxmind.git
     ```
+
+> Folder file names are hardcoded in script. Change them, if they are different
+```
+ folder = '/var/lib/GeoIP/' # Folder, where MaxMind mmdb files are stored
+
+filenames = { \
+    'country' : 'GeoLite2-Country.mmdb', \
+    'city' : 'GeoLite2-City.mmdb',  \
+    'asn' : 'GeoLite2-ASN.mmdb' \
+} # List of mmdb file names
+```
 
 3. Assign +x permissions
 
