@@ -21,16 +21,16 @@
     git clone https://github.com/vsegdacocacola/python-maxmind.git
     ```
 
-> Folder file names are hardcoded in script. Change them, if they are different
-```
- folder = '/var/lib/GeoIP/' # Folder, where MaxMind mmdb files are stored
+   > Folder file names are hardcoded in script. Change them, if they are different
+   ```
+   folder = '/var/lib/GeoIP/' # Folder, where MaxMind mmdb files are stored
 
-filenames = { \
-    'country' : 'GeoLite2-Country.mmdb', \
-    'city' : 'GeoLite2-City.mmdb',  \
-    'asn' : 'GeoLite2-ASN.mmdb' \
-} # List of mmdb file names
-```
+   filenames = { \
+       'country' : 'GeoLite2-Country.mmdb', \
+       'city' : 'GeoLite2-City.mmdb',  \
+       'asn' : 'GeoLite2-ASN.mmdb' \
+   } # List of mmdb file names
+   ```
 
 3. Assign +x permissions
 
